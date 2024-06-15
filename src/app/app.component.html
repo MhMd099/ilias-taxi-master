@@ -1,0 +1,38 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * -->
+<!-- * * * * * * * * * * * * * *Waleed Ismaeil * * * * * * * * * * * * * * * * * -->
+
+
+<mat-toolbar color="primary">
+    <span>Ilias Taxi</span>
+    <span class="spacer"></span>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+    </button>
+</mat-toolbar>
+
+<mat-menu #menu="matMenu">
+    <button mat-menu-item routerLink="/">Home</button>
+    <button mat-menu-item routerLink="/about">About</button>
+    <button mat-menu-item routerLink="/services">Services</button>
+    <button mat-menu-item routerLink="/contact">Contact</button>
+</mat-menu>
+<mat-tab-group>
+    <mat-tab label="Home" routerLink="/"></mat-tab>
+    <mat-tab label="About" routerLink="/about"></mat-tab>
+    <mat-tab label="Services" routerLink="/services"></mat-tab>
+    <mat-tab label="Contact" routerLink="/contact"></mat-tab>
+</mat-tab-group>
+
+<div class="content">
+    <router-outlet></router-outlet>
+</div>
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
